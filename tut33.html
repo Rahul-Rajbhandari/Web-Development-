@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+        <style>
+            body{
+                background-color: black;
+                color: white;
+                margin: 0px;
+                padding: 0px; 
+            }
+            header::before {
+                content: "";
+                background: url(laura-vinck-Hyu76loQLdk-unsplash.jpg) no-repeat center center/cover;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.5;
+            }
+            .navigator{
+                display: flex;
+            }
+            .navigator li{
+                list-style: none;
+                padding: 12px 23px;
+                
+            }
+            section{
+                margin: 40px 80px;
+                text-align: center;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigator">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to our website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore necessitatibus iure, molestiae rem ipsa asperiores esse? Nisi repudiandae enim est fuga, sapiente ea temporibus nostrum quis possimus, nemo adipisci dolorum distinctio neque.</p>
+    </section>
+</body>
+</html>

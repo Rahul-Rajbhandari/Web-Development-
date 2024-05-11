@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Tutorial</title>
+    <style>
+      .container {
+        height: 400px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        /* flex properties for flex container */
+        /* flex-direction: row; */
+        flex-direction: column;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap; */
+
+        /* flex-flow: row-reverse wrap; shorthand for flex direction and flex wrap*/
+
+        /* justify the content in horizontal direction */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        /* justify the contents in vertical direction */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; default */
+        /* align-items: stretch; */
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        border: 2px solid red;
+        border-radius: 4px;
+        margin: 8px;
+        padding: 3px;
+      }
+      #box1 {
+        /* flex property for a flex item */
+        /* higher the order later it shows in the container */
+        /* order: 2; */
+        
+        /* flex-grow: 2;
+        flex-shrink: 2; */
+      }
+      #box2 {
+        /* order: 3; */
+        /* flex-grow: 3;
+        flex-shrink: 3; */
+
+        /* flex-basis: 370px; */
+        /* when flex direction is set to row flex-basis will control width */
+        /* when flex direction is set to column flex-basis will control height */
+      }
+      #box3 {
+        /* flex: grow, shrink, flex basis */
+        /* flex: 2 2 230px; */
+
+        /* align-self: center; */
+        /* align-self: flex-start; */
+        /* align-self: flex-end; */
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is flex turorial</h1>
+    <div class="container">
+      <div class="box" id="box1">First Box</div>
+      <div class="box" id="box2">Second Box</div>
+      <div class="box" id="box3">Third Box</div>
+      <!-- <div class="box" id="box4">Fourth Box</div>
+        <div class="box" id="box5">Fifth Box</div>
+        <div class="box" id="box6">Sixth Box</div> -->
+    </div>
+  </body>
+</html>
