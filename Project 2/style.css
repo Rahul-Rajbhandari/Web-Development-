@@ -127,6 +127,7 @@ body {
 #client-section::before {
     content: "";
     position: absolute;
+    bottom: 2px;
     background: url(bg.jpeg)no-repeat center center/cover;
     height: 100%;
     width: 100%;
